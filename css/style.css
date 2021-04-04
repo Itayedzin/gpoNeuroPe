@@ -1,0 +1,483 @@
+* { /*VALORES PARA ARRANCAR EL CÓDIGO CON MARGEN & PADDING EN CERO*/
+  margin: 0;
+  padding:0;
+  font-family: sans-serif;
+  box-sizing: border-box /*ULTiMO AGREGADO*/
+}
+
+body{
+    margin: 0;
+}
+
+
+header{
+    background: cadetblue;
+    width:auto;
+    height: 90px;
+
+}
+#logo{
+    background: white;
+    width:30%;
+    height: 90px;
+    float: left;
+    /*padding-top: 1%;*/
+}
+
+.logoHome{
+    width: auto;
+    height: 80px;
+}
+
+#menu{
+    background: white;
+    width:70%;
+    height:90px;
+    float: right;
+    text-align: right;
+    font-size: large;
+    /*padding-top: 1% ;*/
+    
+}
+
+.enlace{
+    text-decoration: none;
+    color: #04235c;
+    padding-top: 4%;
+    padding-inline-end: 2%;
+    display: inline-block;
+}
+
+.enlace:hover{
+    color: #00aad9;
+    text-decoration: none;
+}
+
+main{
+    background: white;
+    width: auto;
+}
+
+/*Estilos para el slider de Bienvenida* INICIA*/
+
+
+        .mySlides {
+            display: none
+        }
+
+        .imgSlider {
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+            max-height: 800px;
+            vertical-align: middle;
+            
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            height: 60%;
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            height: 500px;
+            color: #000000;
+            font-size: 18px;
+            padding: 3% 3%;
+            position: absolute;
+            bottom: 0px;
+            width: 25%;
+            text-align: left;
+            background-color: rgba(255, 255, 255, .8);
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            margin-bottom: 15px;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+    .enlaceSlider{
+        font-size: larger;
+        text-decoration: none;
+        color: #04235c;
+        padding-top: 8%;
+        display: inline-block;
+    }
+
+    .enlaceSlider:hover{
+        color: #00aad9;
+        text-decoration: none;
+    }
+
+/*Estilos para el slider de Bienvenida* TERMINA*/
+
+
+        /* ESTILOS PARA CELULAR */
+        @media only screen and (max-width: 600px) {
+            #logo{
+                background: white;
+                width:100%;
+            }
+
+            #menu{
+                font-size: 0px;
+                width: 0%;
+            }
+
+            .imgSlider {
+            object-fit: cover;
+            object-position: center center;
+            width: 600px;
+            height: auto;
+            vertical-align: middle;
+            
+        }
+
+            .text {
+                width: 100%;
+                height: auto;
+                font-size: 11px;
+                position: relative;
+                text-align: center;
+            }
+        }
+
+/*Estilos para el slider de MARCAS INICIA*/
+.ec{position:relative}
+.ec .ec__holder{overflow:hidden}
+.ec .ec__track{will-change:transform}
+.ec .ec__track:after{content:'';display:table;clear:both}
+.ec .ec__item{float:left;overflow:hidden}
+.ec .ec__pagination{text-align:center;margin-top:10px}
+
+.ec .ec__nav{
+    position:absolute;
+    bottom:40%;
+    border-top:3px solid #000;
+    border-right:3px solid #000;
+    width:20px;height:20px;
+    margin: 10px;
+    cursor:pointer;
+}
+
+.ec .ec__nav:hover{
+    width:25px;
+    height: 25px;
+}
+    
+.ec .ec__nav:before{content:''}
+
+.ec .ec__nav--prev{
+    transform:rotate(-135deg);
+    left:1em}
+.ec .ec__nav--next{
+    transform:rotate(45deg);right:1em}
+    
+.carousel-multiple-items {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imgMarcas {
+    width: 80%;
+    display: block;
+    padding: 1em;
+}
+   
+.box {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px ; 
+}
+/*Estilos para el slider de MARCAS TERMINA*/
+
+.subtitulo{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+}
+
+#equipos{
+    width: 100%;
+    display: inline-block;
+    padding-left: 10%;
+}
+
+.boton{
+    margin-top: 5%;
+    padding: 2%;
+    background-color: rgb(0, 110, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    font-size: 20px;
+    
+}
+
+.boton:hover{
+    color: #04235c;
+    text-decoration: none;
+    background-color: white;
+}
+
+.imgEquipos{
+    width: 55%;
+    float: left;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;*/
+    padding-inline-end: 5%;
+}
+
+.parrafo{
+    display: inline-block;
+    float: right;
+    width: 30%;
+    padding-top: 10%;
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 30px;
+    margin-inline-end: 10%;
+}
+
+.encabezado{
+    margin-top: 10%;
+    position: relative;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+}
+
+#infoSerIns{
+    width:100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 9%;
+    
+}
+
+.imgSer{
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+
+#servicios{
+    background-color:rgba(0, 110, 255, 0.322);
+    width: 45%;
+    height: auto;
+    float:left;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+#insumos{
+    background-color:rgba(0, 110, 255, 0.322);
+    width: 45%;
+    height: auto;
+    float: right;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.serParrafo{
+    color:  #04235c;
+    align-self:center;
+    font-size: 20px;
+    text-align:left;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30px;
+}
+
+#servicioTecnico{
+    width:100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 9%;
+    position: relative;
+    float:left;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+/*ESTILOS DE SERVICIO TECNICO INICIA*/
+
+.bullet{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: .5%;
+    margin-bottom: .5%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+    margin-inline-end: 25px;
+}
+
+input[type=submit]:hover {
+    color: #04235c;
+    text-decoration: none;
+    background-color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    padding: 2%;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 1%;
+}
+
+.col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .col-25, .col-75, .bullet, .subtitulo, .serParrafo, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0px;
+        font-size: 15px;
+    }
+}
+
+/*ESTILOS DE SERVICIO TECNICO TERMINA*/
+
+
+/*FOOTER INICIA*/
+
+footer{
+    background: rgb(63, 146, 255);
+    float: left;
+    width:100%;
+    height: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3%;
+  text-align: right;
+}
+
+#enlaceF{
+    color:inherit;
+    float:right;
+    text-decoration: none;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*FOOTER TERMINA*/
