@@ -296,7 +296,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
     ElderCarousel.defaults = {
         selector: '',
-        items: 3,
+        items: 4,
         step: 1,
         speed: 300,
         start: 0,
@@ -307,6 +307,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         play: false,
         playInterval: 3000
     };
+    
     window.ElderCarousel = ElderCarousel;
 })();
 //# sourceMappingURL=index.min.js.map
+
+
+

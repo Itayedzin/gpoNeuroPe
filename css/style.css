@@ -9,7 +9,6 @@ body{
     margin: 0;
 }
 
-
 header{
     background: cadetblue;
     width:auto;
@@ -69,7 +68,7 @@ main{
             object-fit: cover;
             object-position: center center;
             width: 100%;
-            max-height: 800px;
+            height: auto;
             vertical-align: middle;
             
         }
@@ -173,7 +172,7 @@ main{
             .imgSlider {
             object-fit: cover;
             object-position: center center;
-            width: 600px;
+            width: 100%;
             height: auto;
             vertical-align: middle;
             
@@ -182,7 +181,7 @@ main{
             .text {
                 width: 100%;
                 height: auto;
-                font-size: 11px;
+                font-size: smaller;
                 position: relative;
                 text-align: center;
             }
@@ -224,7 +223,7 @@ main{
     margin: 0 auto;
 }
 
-.imgMarcas {
+.imgLogos {
     width: 80%;
     display: block;
     padding: 1em;
@@ -431,7 +430,7 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .col-25, .col-75, .bullet, .subtitulo, .serParrafo, input[type=submit] {
         width: 100%;
         margin-top: 0;
@@ -473,11 +472,202 @@ footer{
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 /*FOOTER TERMINA*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .imgEquipos{
+        width: 90%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .encabezado{
+        margin-top: 5px;
+        position: relative;
+        color: #000000;
+        font-size: 18px;
+    }
+    .parrafo{
+        width: 90%;
+        font-size: smaller;
+    }
+    #servicios{
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        margin-bottom: 3%;
+    }
+
+    #insumos{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        margin-bottom: 3%;
+    }
+
+    .serParrafo{
+        font-size: smaller;
+        padding-top: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 30px;
+    }
+
+    footer{
+        font-size: smaller;
+    }
+
+}
+
+/*ESTILOS PARA SUBPAGINAS*//*ESTILOS PARA SUBPAGINAS*//*ESTILOS PARA SUBPAGINAS*//*ESTILOS PARA SUBPAGINAS*//*ESTILOS PARA SUBPAGINAS*/
+
+
+.titulo{
+    color: #000000;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    float:left;
+}
+
+#imgEncabezado{
+    height: 400px;
+    width: 91%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+#imgEncabezado img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
+    padding-left: 11%;
+}
+
+.subpage{
+    display: inline-block;
+    padding-top: 1%;
+    
+}
+
+.parrafoSubpage{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    
+    padding-bottom: 2%;
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10%;
+   
+}
+
+.imgSubpage{
+    display: inline-block;
+    float: left;
+    width: 41%;
+    height: 400px;;
+    padding-left: 10%;
+    height: 40%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+
+.imgSubpage img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
+    padding-left: 12%;
+}
+
+
+#contacto{
+    width:100%;
+    height: auto;
+    position: relative;
+    float:left;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 10%;
+    background-color: #dfdfdf;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.columnMarcas {
+  float: left;
+  width: 30%;
+  text-align:center;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+.galMarcas {
+    margin-left: 9%;
+}
+
+.imgMarcas{
+    height: 600px;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.imgMarcas img{
+    position: absolute;
+    max-width: 200%;
+    width: 200%;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.botonMarcas{
+    padding: 2%;
+    background-color: rgb(0, 110, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    align-items:center;
+    font-size: 20px;
+}
+
+.botonMarcas:hover{
+    color: #04235c;
+    text-decoration: none;
+    background-color: white;
+}
+
+.columnConsumibles {
+  float: left;
+  width: 45%;
+  text-align:center;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
