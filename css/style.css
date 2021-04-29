@@ -68,9 +68,8 @@ main{
             object-fit: cover;
             object-position: center center;
             width: 100%;
-            height: auto;
+            height: 800px;
             vertical-align: middle;
-            
         }
 
         /* Slideshow container */
@@ -275,7 +274,7 @@ main{
     float: left;
     display: inline-block;
     padding-top: 30px;
-    padding-bottom: 30px;*/
+    padding-bottom: 30px;
     padding-inline-end: 5%;
 }
 
@@ -459,7 +458,7 @@ footer{
   text-align: right;
 }
 
-#enlaceF{
+.enlaceF{
     color:inherit;
     float:right;
     text-decoration: none;
@@ -582,9 +581,8 @@ footer{
     display: inline-block;
     float: left;
     width: 41%;
-    height: 400px;;
+    height: 400px;
     padding-left: 10%;
-    height: 40%;
     overflow: hidden;
     position: relative;
     margin-top: 50px;
